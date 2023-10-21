@@ -1,0 +1,890 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+img {
+	display: block;
+	width: 100%;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+.header-block {
+	width: 100%;
+	height: 275px;
+	position: relative;
+	background: url('../images/main-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-block header {
+	position: relative;
+	z-index: 10;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 275px;
+	top: 0;
+	left: 0;
+	background: rgba(198, 108, 73, 0.30);
+}
+
+header .content-wrap .logo {
+	order: 2;
+}
+
+.icons {
+	color: #fff;
+}
+
+.logo {
+	position: absolute;
+	color: #FFF;
+	font-family: Libre Franklin;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-top: 36px;
+	margin-left: 120px;
+
+}
+
+.main-menu {
+	position: absolute;
+	color: #FFF;
+	font-family: Segoe MDL2 Assets;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 36px;
+	margin-left: 10px;
+}
+
+.menu-list {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.287);
+}
+
+.menu-list li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.menu-list a {
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*Global styles*/
+.content-wrap {
+	padding: 0 20px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+.hide-menu {
+	position: absolute;
+	left: -9999px;
+}
+
+.text1 {
+	position: absolute;
+	color: #FFF;
+	font-family: Libre Franklin;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 115px;
+	margin-left: 78px;
+}
+
+.text2 {
+	position: absolute;
+	color: #FFF;
+	font-family: Libre Franklin;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 152px;
+	margin-left: 56px;
+}
+
+.text3 {
+	position: absolute;
+	color: #FFF;
+	font-family: Libre Franklin;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration-line: underline;
+	margin-top: 209px;
+	margin-left: 136px;
+	text-decoration: none;
+}
+
+.about {
+	position: absolute;
+	background: #FFF;
+	width: 375px;
+	height: 250px;
+	flex-shrink: 0;
+	margin-top: 275px;
+}
+
+.about-text {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: 'Libre Franklin';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-top: 30px;
+	margin-left: 150px;
+}
+
+.text4 {
+	position: absolute;
+	width: 312px;
+	height: 212px;
+	position: absolute;
+	color: var(--Gray-1, #333);
+	text-align: justify;
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 75px;
+	margin-left: 34px;
+
+}
+
+.Skills {
+	position: absolute;
+	width: 100%;
+	height: 590px;
+	margin-top: 568px;
+	background-color: rgba(255, 250, 242, 1);
+}
+
+.Skills-text {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 62px;
+	height: 29px;
+	margin-top: 30px;
+	left: 156px;
+
+}
+
+.profil-immg {
+	position: absolute;
+	background: url('../images/profil1.png');
+	width: 163px;
+	height: 218px;
+	flex-shrink: 0;
+	margin-top: 85px;
+	margin-left: 110px;
+}
+
+.Profile {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+	width: 39px;
+	height: 25px;
+	margin-top: 330px;
+	margin-left: 40px;
+
+}
+
+.ui {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 25px;
+	width: 211px;
+	height: 25px;
+	margin-top: 330px;
+	margin-left: 138px;
+}
+
+.Front-end {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+	width: 82px;
+	height: 25px;
+	margin-top: 370px;
+	margin-left: 40px;
+}
+
+.ux-bar {
+	position: absolute;
+	width: 192px;
+	height: 18px;
+	background-color: rgba(245, 214, 171, 1);
+	margin-top: 372px;
+	margin-left: 137px;
+}
+
+.ux-bar-fill {
+	height: 100%;
+    width: 76%;
+    background-color: #C66C49;
+}
+
+.Tools {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+	width: 31px;
+	height: 25px;
+	margin-top: 405px;
+	margin-left: 40px;
+}
+
+.lan {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 25px;
+	width: 182px;
+	height: 25px;
+	margin-top: 405px;
+	margin-left: 138px;
+}
+
+.Design {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+	width: 55px;
+	height: 25px;
+	margin-top: 440px;
+	margin-left: 40px;
+}
+
+.design-bar {
+	position: absolute;
+	width: 192px;
+	height: 18px;
+	background-color: rgba(245, 214, 171, 1);
+	margin-top: 442px;
+	margin-left: 137px;
+}
+
+.design-bar-fill {
+	height: 100%;
+    width: 81%;
+    background-color: #C66C49;
+}
+
+.Tools1 {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+	width: 31px;
+	height: 25px;
+	margin-top: 475px;
+	margin-left: 40px;
+}
+
+.prog {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 25px;
+	width: 182px;
+	height: 25px;
+	margin-top: 475px;
+	margin-left: 138px;
+}
+
+.Research {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+	width: 74px;
+	height: 25px;
+	margin-top: 510px;
+	margin-left: 40px;
+}
+
+.research-bar {
+	position: absolute;
+	width: 192px;
+	height: 18px;
+	background-color: rgba(245, 214, 171, 1);
+	margin-top: 512px;
+	margin-left: 137px;
+}
+
+.research-bar-fill {
+	height: 100%;
+    width: 65%;
+    background-color: #C66C49;
+}
+
+.Tools2 {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+	width: 31px;
+	height: 25px;
+	margin-top: 545px;
+	margin-left: 40px;
+}
+
+.paper {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 25px;
+	width: 116px;
+	height: 25px;
+	margin-top: 545px;
+	margin-left: 138px;
+}
+
+.portfolio {
+	position: absolute;
+	width: 100%;
+	height: 404px;
+	flex-shrink: 0;
+	background: rgba(255, 255, 255, 1);
+	margin-top: 1158px;
+
+}
+
+.portfolio-text {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 62px;
+	height: 29px;
+	margin-top: 30px;
+	margin-left: 140px;
+}
+
+.ux-research {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+	margin-top: 70px;
+	margin-left: 145px;
+}
+
+.text5 {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	text-align: center;
+	font-family: Libre Franklin;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	width: 268px;
+	height: 71px;
+	margin-top: 105px;
+	margin-left: 50px;
+
+}
+
+.p-img {
+	position: absolute;
+	background: url('../images/Rectangle.png');
+	width: 169.764px;
+	height: 69.846px;
+	flex-shrink: 0;
+	margin-left: 34px;
+	margin-top: 170px;
+}
+
+.p-img1 {
+	position: absolute;
+	background: url('../images/dom-luis-bridge-porto-carol-japp.png');
+	width: 123.69px;
+	height: 113.01px;
+	flex-shrink: 0;
+	margin-left: 218.31px;
+	margin-top: 170px;
+}
+
+.p-img2 {
+	position: absolute;
+	background: url('../images/Rectangle1.png');
+	width: 169.764px;
+	height: 113.28px;
+	flex-shrink: 0;
+	margin-left: 34px;
+	margin-top: 250px;
+}
+
+.p-img3 {
+	position: absolute;
+	background: url('../images/Rectangle2.png');
+	width: 123.685px;
+	height: 69.846px;
+	flex-shrink: 0;
+	margin-left: 218.31px;
+	margin-top: 294px;
+}
+
+.getin{
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	flex-shrink: 0;
+	background: rgba(255, 250, 242, 1);
+	margin-top: 1561px;
+}
+
+.getin-text {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 142px;
+	height: 29px;
+	margin-top: 30px;
+	margin-left: 120px;
+}
+
+.Dribbble, .LinkedIn, .Behance, .Facebook, .CodePen, .Instagram, .GitHub, .Twitter, .number, .email {
+	position: absolute;
+	color: var(--Gray-1, #333);
+	font-family: Libre Franklin;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.Dribbble {
+	margin-top: 70px;
+	margin-left: 41px;
+}
+
+.LinkedIn {
+	margin-top: 70px;
+	margin-left: 201px;
+}
+
+.Behance {
+	margin-top: 100px;
+	margin-left: 41px;
+}
+
+.Facebook {
+	margin-top: 100px;
+	margin-left: 201px;
+}
+
+.CodePen {
+	margin-top: 130px;
+	margin-left: 41px;
+}
+
+.Instagram {
+	margin-top: 130px;
+	margin-left: 201px;
+}
+
+.GitHub {
+	margin-top: 160px;
+	margin-left: 41px;
+}
+
+.Twitter {
+	margin-top: 160px;
+	margin-left: 201px;
+}
+
+.email{
+	margin-top: 210px;
+	margin-left: 41px;
+	color: #000;
+	text-decoration: none;
+}
+
+
+.number {
+	margin-top: 240px;
+	margin-left: 41px;
+}
+
+.stril {
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 318px;
+}
+
+.fa-chevron-up {
+	color: #000;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+	header .content-wrap .logo {
+		order: 0;
+	}
+
+	.icons {
+		display: none;
+	}
+	.hide-menu {
+		position: static;
+	}
+	.menu-list {
+		background: transparent;
+	}
+	.header-block, .overlay{
+		width: 100%;
+		height: 600px;
+	}
+	.about {
+		width: 100%;
+		height: 535px;
+		margin-top: 600px;
+	}
+
+	.Skills {
+		width: 100%;
+		height: 693px;
+		margin-top: 1130px;
+	}
+
+	.portfolio{
+		width: 100%;
+		height: 822px;
+		margin-top: 1820px;
+	}
+
+	.getin{
+		width: 100%;
+		height: 528px;
+		margin-top: 2640px;
+	}
+
+
+	.logo {
+		margin-left: 30px;
+	}
+
+	.home {
+		margin-left: 650px;
+		color: #FFF;
+		font-family: Libre Franklin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	.about1 {
+		position: absolute;
+		margin-left: 750px;
+		margin-top: -50px;
+	}
+
+	.skills {
+		position: absolute;
+		margin-top: -50px;
+		margin-left: 850px;
+	}
+	.portfolio1 {
+		position: absolute;
+		margin-top: -50px;
+		margin-left: 950px;
+	}
+	.contact {
+		position: absolute;
+		margin-top: -50px;
+		margin-left: 1070px;
+	}
+
+	.text1 {
+		font-size: 64px;
+		margin-left: 30px;
+		margin-top: 200px;
+	}
+	.text2 {
+		font-size: 24px;
+		margin-left: 30px;
+		margin-top: 290px;
+	}
+	.text3 {
+		font-size: 18px;
+		margin-left: 30px;
+		margin-top: 410px;
+	}
+	.about-text {
+		margin-left: 260px;
+		margin-top: 93px;
+	}
+	.text4 {
+		width: 1000px;
+		height: 231px;
+		margin-left: 260px;
+		margin-top: 198px;
+		color: var(--Gray-1, #333);
+		text-align: justify;
+		font-family: Libre Franklin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	.Skills-text {
+		margin-top: 93px;
+		font-size: 24px;
+		margin-left: 105px;
+	}
+	.profil-immg {
+		width: 255px;
+		height: 340px;
+		margin-top: 208px;
+		margin-left: 260px;
+		background: url('../images/profil.png');
+	}
+	.ui, .lan, .prog, .paper {
+		font-size: 18px;
+		width: 316px;
+		height: 25px;
+		margin-left: 850px;
+	}
+
+	.Profile,  .Front-end, .Tools, .Design, .Tools1, .Research, .Tools2 {
+		width: 123px;
+		height: 25px;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 25px;
+		margin-left: 670px;
+	}
+
+	.Profile, .ui {
+		margin-top: 208px;
+	}
+
+	.Front-end, .ux-bar {
+		margin-top: 278px;
+	}
+
+	.Tools, .lan {
+		margin-top: 325px;
+	}
+
+	.Design, .design-bar {
+		margin-top: 372px;
+	}
+
+	.Tools1, .prog {
+		margin-top: 419px;
+	}
+
+	.Research, .research-bar{
+		margin-top: 466px;
+	}
+
+	.Tools2, .paper {
+		margin-top: 513px;
+	}
+
+	.ux-bar, .design-bar, .research-bar {
+		width: 446px;
+		height: 24px;
+		margin-left: 850px;
+	}
+	.portfolio-text {
+		margin-top: 93px;
+		font-size: 24px;
+		margin-left: 260px;
+	}
+
+	.ux-research {
+		margin-left: 260px;
+		margin-top: 208px;
+		color: var(--Gray-1, #333);
+		font-family: Libre Franklin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 25px;
+	}
+
+	.text5 {
+		width: 349px;
+		height: 137px;
+		text-align: justify;
+		font-family: Libre Franklin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30px;
+		margin-left: 260px;
+		margin-top: 281px;
+	}
+
+	.p-img {
+		width: 350px;
+		height: 144px;
+		background: url('../images/Rectangle3.png');
+		margin-left: 720px;
+		margin-top: 274px;
+	}
+
+	.p-img2 {
+		width: 349px;
+		height: 233px;
+		background: url('../images/Rectangle4.png');
+		margin-left: 720px;
+		margin-top: 444px;
+	}
+
+	.p-img1 {
+		width: 255px;
+		height: 234px;
+		background: url('../images/dom-luis-bridge-porto-carol-japp1.png');
+		margin-top: 274px;
+		margin-left: 1100px;
+	}
+	.p-img3 {
+		width: 255px;
+		height: 144px;
+		background: url('../images/Rectangle5.png');
+		margin-left: 1100px;
+		margin-top: 533px;
+	}
+
+	.getin-text {
+		margin-top: 93px;
+		margin-left: 260px;
+	}
+
+	.Dribbble, .LinkedIn, .Behance, .Facebook, .CodePen, .Instagram, .GitHub, .Twitter, .email, .number {
+		font-size: 18px;
+	}
+
+	.email, .number {
+		margin-left: 1000px;
+	}
+
+	.LinkedIn, .Facebook, .Instagram, .Twitter {
+		margin-left: 645px;
+	}
+	.Dribbble, .Behance, .CodePen, .GitHub {
+		margin-left: 260px;
+	}
+	.Dribbble,.email, .LinkedIn {
+		margin-top: 173px;
+	}
+	.Behance,.number, .Facebook {
+		margin-top: 209px;
+	}
+	.CodePen, .Instagram{
+		margin-top: 245px;
+	}
+	.GitHub, .Twitter {
+		margin-top: 281px;
+	}
+
+	.fa-chevron-up {
+		font-size: 24px;
+	}
+	.stril {
+		margin-top: 434px;
+		margin-left: 1236px;
+	}
+	.pol {
+		color: var(--Gray-1, #333);
+	}
+
+}
